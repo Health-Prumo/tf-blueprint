@@ -10,8 +10,9 @@ Os ambientes que usam estes módulos ficam em [Health-Prumo/tf-environments](htt
 | [`budgets`](budgets/) | Orçamento mensal com alertas de custo por e-mail |
 | [`cost-anomaly`](cost-anomaly/) | Detecção de anomalias de custo com resumo diário por e-mail |
 | [`dns-zone`](dns-zone/) | Zona pública no Route 53 (delegação de DNS) com proteção contra e-mail falso |
+| [`static-site`](static-site/) | Site estático com S3 privado, CloudFront, certificado do ACM e domínio no Route 53 |
 
-Os próximos módulos (rede, banco, login, front-end e API) entram quando a infra do Prumo for provisionada. A arquitetura planejada está em [docs/06-infraestrutura-aws.md](https://github.com/Health-Prumo/prumo/blob/main/docs/06-infraestrutura-aws.md).
+Os próximos módulos (rede, banco, login e API) entram quando a infra do Prumo for provisionada. A arquitetura planejada está em [docs/06-infraestrutura-aws.md](https://github.com/Health-Prumo/prumo/blob/main/docs/06-infraestrutura-aws.md).
 
 ## Convenções
 
