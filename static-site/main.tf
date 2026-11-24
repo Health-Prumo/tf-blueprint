@@ -183,10 +183,11 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  # Sem permissão de listar, o S3 responde 403 para arquivo inexistente. Vira 404 com a página inicial.
+  # Sem permissão de listar, o S3 responde 403 para arquivo inexistente. Vira a página inicial:
+  # com status 404 num site comum, ou 200 numa SPA (o roteador do navegador resolve o caminho).
   custom_error_response {
     error_code            = 403
-    response_code         = 404
+    response_code         = var.spa ? 200 : 404
     response_page_path    = "/index.html"
     error_caching_min_ttl = 60
   }

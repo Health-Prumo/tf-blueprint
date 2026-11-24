@@ -76,3 +76,9 @@ variable "force_destroy" {
   type        = bool
   default     = false
 }
+
+variable "spa" {
+  description = "Aplicação de página única: caminhos inexistentes devolvem o index.html com status 200."
+  type        = bool
+  default     = false
+}

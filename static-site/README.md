@@ -30,6 +30,7 @@ Sem custo fixo. CloudFront no nível gratuito (1 TB e 10 milhões de requisiçõ
 | `redirect_www` | `bool` | `true` | Atende e redireciona o `www` |
 | `price_class` | `string` | `PriceClass_All` | Classe de preço do CloudFront |
 | `force_destroy` | `bool` | `false` | Apaga o bucket mesmo com arquivos |
+| `spa` | `bool` | `false` | Caminhos inexistentes devolvem o `index.html` com 200 (React Router etc.) |
 
 ## Saídas
 
